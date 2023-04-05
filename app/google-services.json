@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "684081971409",
+    "project_id": "oxoo-apps",
+    "storage_bucket": "oxoo-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684081971409:android:3b2c943df976ff704745f0",
+        "android_client_info": {
+          "package_name": "com.oxoo.spagreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684081971409-3nipoav1l1i0ccp8k1dafjnd6pmkq96j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQbxEp_4Nj0zeUyvnVyhmIGQ4azHy3Reg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684081971409-3nipoav1l1i0ccp8k1dafjnd6pmkq96j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

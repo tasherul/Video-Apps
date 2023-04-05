@@ -1,0 +1,57 @@
+
+
+apply plugin: 'com.android.library'
+//apply plugin: 're.obfuscator.dprotect'
+
+//dProtect {
+//    configurations {
+//        release {
+//            defaultConfiguration 'proguard-android-optimize.txt'
+//            defaultConfiguration 'proguard-android.txt'
+//            configuration        'proguard-rules.pro'
+//            configuration        'dprotect-rules.pro'
+//        }
+//        debug {
+//            defaultConfiguration 'proguard-android.txt'
+//            configuration        'proguard-rules.pro'
+//        }
+//    }
+//}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 33
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pgcfg'
+            consumerProguardFiles 'proguard-rules.pgcfg'
+        }
+        debug {
+            minifyEnabled false // Prevent using r8
+        }
+    }
+    namespace 'com.google.android.ads.nativetemplates'
+
+}
+
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.android.gms:play-services-ads:21.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
